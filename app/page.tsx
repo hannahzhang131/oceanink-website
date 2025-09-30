@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaApple, FaGooglePlay } from 'react-icons/fa'
+import { SiSubstack } from 'react-icons/si'
 
 export default function Home() {
   return (
@@ -30,13 +31,13 @@ export default function Home() {
                 chefs, and everyone—cook, create, and connect today!
               </p>
               <div className="flex flex-col sm:flex-row gap-8">
-                <Link href="#" className="btn-primary flex items-center justify-center gap-4 text-xl px-8 py-4">
+                <Link href="https://apps.apple.com/us/app/recipe-connects/id6740811794" className="btn-primary flex items-center justify-center gap-4 text-xl px-8 py-4">
                   <FaApple className="text-2xl" />
                   Download for iOS
                 </Link>
-                <Link href="#" className="btn-secondary flex items-center justify-center gap-4 text-xl px-8 py-4">
-                  <FaGooglePlay className="text-2xl" />
-                  Download for Android
+                <Link href="https://recipeconnects.substack.com/" className="btn-secondary flex items-center justify-center gap-4 text-xl px-8 py-4">
+                  <SiSubstack className="text-2xl" />
+                  Substack
                 </Link>
               </div>
             </div>
@@ -217,7 +218,7 @@ export default function Home() {
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <p className="text-warm-300">
                 <a href="mailto:user.support@oceanink.uno" className="hover:text-warm-400 transition-colors">
-                  user.support@oceanink.uno
+                  recipeconnects@oceanink.co
                 </a>
               </p>
             </div>
@@ -243,13 +244,13 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Download App</h4>
+              <h4 className="text-lg font-semibold mb-4">Subscription</h4>
               <div className="flex flex-col space-y-2">
-                <Link href="#" className="text-warm-300 hover:text-warm-400 transition-colors flex items-center gap-2">
-                  <FaApple className="text-xl" /> iOS App
+                <Link href="https://apps.apple.com/us/app/recipe-connects/id6740811794" className="text-warm-300 hover:text-warm-400 transition-colors flex items-center gap-2">
+                  <FaApple className="text-xl" /> IOS App
                 </Link>
-                <Link href="#" className="text-warm-300 hover:text-warm-400 transition-colors flex items-center gap-2">
-                  <FaGooglePlay className="text-xl" /> Android App
+                <Link href="https://recipeconnects.substack.com/" className="text-warm-300 hover:text-warm-400 transition-colors flex items-center gap-2">
+                  <SiSubstack className="text-xl" /> Substack
                 </Link>
               </div>
             </div>
